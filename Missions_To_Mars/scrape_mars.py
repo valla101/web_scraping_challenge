@@ -229,7 +229,7 @@ def scrape_info():
     # In[30]:
 
 
-    mars_facts_df=mars_facts_df.set_index(0)
+    # mars_facts_df=mars_facts_df.set_index(0)
 
 
     # In[31]:
@@ -241,7 +241,7 @@ def scrape_info():
     # In[32]:
 
 
-    mars_facts_df.loc['Mass:']
+    # mars_facts_df.loc['Mass:']
 
 
     # In[33]:
@@ -258,9 +258,6 @@ def scrape_info():
 
 
     # In[35]:
-
-
-    html_table
 
 
     # # Finding Hemisphere Image URLs
@@ -378,7 +375,10 @@ def scrape_info():
     "latest_headline":latest_headline,
     "latest_headline_p":latest_headline_p,
     "html_table":html_table,
-    "mars_weather_clean":mars_weather_clean}
+    "mars_weather_clean":mars_weather_clean,
+    "cerberus_img":cerberus_img,
+    "schiaparelli_img":schiaparelli_img,
+    "syrtis_img":syrtis_img}
     # In[49]:
 
 

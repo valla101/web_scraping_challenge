@@ -12,19 +12,68 @@
 <body>
   <div class="container-fluid">
     <div class="jumbotron text-center">
-      <h1>Testing</h1>
-      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Data!</a></p>
+      <h1>Mars Web Scraping</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Start Scraping</a></p>
     </div>
-    <h1>{{hem.latest_headline}}</h1>
-    <p>{{hem.latest_headline_p}}</p>
-    <table>{{hem.html_table}}</table>
-    <h1>Latest Mars Weather</h1>
-    <h2>{{hem.mars_weather_clean}}</h2>
-    <img src="{{ hem.results_feat_img_link_full }}" alt="Featured Image">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="padding:10px; align-self: center;">
+          <h1>{{hem.latest_headline}}</h1>
+          <p>{{hem.latest_headline_p}}</p>
+        </div>
+        <!-- <div class = "container" style="width:100%" ></div> -->
+        <div class = "col-md-6" style="width:33%"><table border="1" class="dataframe"> <thead> <tr style="text-align: right;"> <th></th> <th>Values</th> </tr> <tr> <th></th> <th></th> </tr> </thead> <tbody> <tr> <th>Equatorial Diameter:</th> <td>6,792 km</td> </tr> <tr> <th>Polar Diameter:</th> <td>6,752 km</td> </tr> <tr> <th>Mass:</th> <td>6.39 × 10^23 kg (0.11 Earths)</td> </tr> <tr> <th>Moons:</th> <td>2 (Phobos &amp; Deimos)</td> </tr> <tr> <th>Orbit Distance:</th> <td>227,943,824 km (1.38 AU)</td> </tr> <tr> <th>Orbit Period:</th> <td>687 days (1.9 years)</td> </tr> <tr> <th>Surface Temperature:</th> <td>-87 to -5 °C</td> </tr> <tr> <th>First Record:</th> <td>2nd millennium BC</td> </tr> <tr> <th>Recorded By:</th> <td>Egyptian astronomers</td> </tr> </tbody> </table></div>
+        <div class="row">
+          <div class="col-md-6" style="border: solid; background-color:turquoise">
+            <h1>Latest Mars Weather</h1>
+            <p>{{hem.mars_weather_clean}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="text-align: center; background-color: silver;"><h1>Featured Mars Image</h1><img src="{{ hem.results_feat_img_link_full }}" alt="Featured Image"></div>
     <br>
     <br>
-    <img src="{{ hem.valles_img }}" alt="valles_img">
-
+    
+  <div class = "container" style="background-color: silver; width: 100%;">
+    <h1 style="text-align: center; color:black">Mars Hemispheres</h1>
+    <div class="row" style="text-align: center;">
+      <div class = "col-md-6">
+        <figure class="figure">
+          <img src="{{ hem.valles_img }}" alt="valles_img" style="width: 75%;">
+          <figcaption class='figure-caption'>Valles Hemisphere Enhanced</figcaption>
+        </figure>
+      </div>
+      <!-- <figure class="figure">Column</figure> -->
+      <div class = "col-md-6">
+        <figure class="figure">
+          <img src="{{ hem.cerberus_img }}" alt="cerberus_img" style="width: 75%;">
+          <figcaption class='figure-caption'>Cerberus Hemisphere Enhanced</figcaption>
+        </figure>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="text-align: center;">
+      <div class = "col-md-6">
+        <figure class="figure">
+          <!-- <div class="col-6">Column</div> -->
+            <img src="{{ hem.schiaparelli_img }}" alt="schiaparelli_img" style="width: 75%;">
+            <figcaption class='figure-caption'>Schiaparelli Hemisphere Enhanced</figcaption>
+        </figure>
+      </div>
+        <!-- <div class="col-6">Column</div> -->
+      <div class = "col-md-6">
+        <figure class="figure">
+          <img src="{{ hem.syrtis_img }}" alt="syrtis_img" style="width: 75%;">
+          <figcaption class='figure-caption'>Syrtis Hemisphere Enhanced</figcaption>
+        </figure>
+      </div>
+    </div>
+  <br>
+  <br>
+  </div>
+  
 </body>
 
 </html>
